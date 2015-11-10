@@ -6,8 +6,8 @@ import java.io.Writer;
 
 public class Sort implements familytree{
 	
-	public static ArrayList read_file(){
-		ArrayList list = new ArrayList();
+	public static ArrayList<String> read_file(){
+		ArrayList<String> list = new ArrayList<String>();
 		File input = new File("unsortet.txt");		
 		Scanner reader = new Scanner(System.in);
 		try {
@@ -24,9 +24,8 @@ public class Sort implements familytree{
 		return list;
 	}
 	
-	public static void save_file(){
-		File output = new File("sortet.txt");
-		ArrayList list = new ArrayList(read_file());
+	public static void save_array(){
+		ArrayList<String> list = new ArrayList<String>(read_file());
 		PrintWriter writer = null;
 		try {
 			writer = new PrintWriter(output);
@@ -44,6 +43,6 @@ public class Sort implements familytree{
 
 	
 	public static void main(String[] args) {	
-		save_file();		
+		save_array();		
 	}
 }
