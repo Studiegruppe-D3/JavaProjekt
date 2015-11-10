@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.Writer;
 
-public class Sort implements FamilyTree {
+public class Sort implements familytree{
 	
 	public static ArrayList read_file(){
 		ArrayList list = new ArrayList();
