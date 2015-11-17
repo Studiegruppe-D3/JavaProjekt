@@ -12,7 +12,7 @@ public class frontend {
                 String[] str = i.split(" ");
                 String strr = str[0];
                 strr = strr.substring(0, 1);
-                System.out.println(strr+" "+ str[1]);
+                System.out.println(strr+". "+ str[1]);
             }
             sc.close();
         }
